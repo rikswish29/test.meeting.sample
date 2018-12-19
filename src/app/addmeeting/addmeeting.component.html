@@ -1,0 +1,59 @@
+<div class="container text-center">
+  <h1 style="font-family:italic;">Add Meeting</h1>
+  <div class="row" style="text-align:left">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 col-xs-12 form-container">
+          <form #meetingAddForm="ngForm" (ngSubmit)="addMeeting()">
+
+
+              <div class="form-group">
+                  <label>Meeting By</label>
+                  <p>{{adminName}}</p>
+              </div>
+
+
+
+
+              <div class="form-group">
+                  <label>Where</label>
+                  <input type="text" name="where" [(ngModel)]="where" #wh="ngModel" class="form-control" placeholder="Enter Location." required>
+              </div>
+
+
+              <div class="form-group">
+                  <label>Purpose</label>
+                  <input type="text" name="pupose" [(ngModel)]="purpose" #pur="ngModel" class="form-control" placeholder="Enter Purpose." required>
+              </div>
+
+              <div class="form-group">
+                <label>Email</label>
+                <input type="text" name="emailId" [(ngModel)]="emailId" class="form-control" placeholder="Enter Your Email" required>
+            </div>
+
+              <div class="form-group">
+                <label>
+                    Date
+                    <input name='date' [(ngModel)]='date' placeholder="mm/dd/yyyy">
+                    
+                </label>
+              </div>
+
+
+              <div class="form-group">
+                  <label>
+                      Time
+                  </label>
+                  <select [(ngModel)]="time" #t="ngModel" name="time" 
+                  class="form-control" id="ccode" required>
+                      <option *ngFor="let hour of hourArray" [value]="hour">{{hour}}</option>
+                  </select>
+              
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="color:white" >Add Meeting</button>
+
+          </form>
+      </div>
+      <div class="col-md-3"></div>
+  </div>
+</div>

@@ -1,0 +1,117 @@
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; 
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #111010; 
+  }
+
+  .form-container {
+    padding: 1rem 2rem;
+    flex: 1;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-shadow: 0 3px 20px 0 #ff6600;
+  
+  } 
+  .form-container.p {
+     
+    color: balck !important;
+    }
+  .form-container.h1 {
+      font-size: 1.45rem;
+      margin: 0;
+    }
+  .form-group-prop{
+    width: 50%;
+    
+  }
+
+  .wrapper {
+    height: 100%;
+    width : 100%; 
+    display: flex;
+    border-radius:10px;
+    flex-direction: column;
+    background-position: center;
+    background-repeat : no-repeat;
+  }
+
+  .input {
+    outline: none;
+    border: 2px solid hsl(0, 0%, 95%);
+    background: hsl(0, 0%, 95%);
+    border-radius: 3px;
+    padding: 0.5rem 0.75rem;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 3px 20px 0 #ff6600;
+  }
+
+  .label {
+    margin: 0 0 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+
+.forgot-password-link {
+  color: rgb(228, 13, 13) !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.button-container {
+  text-align: right;
+  margin-top: 3px;
+}
+
+.signup{
+  color: rgb(85, 202, 30);
+}
+
+button {
+  border: none;
+  color: white;
+  padding : 2px;
+  margin-left : 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease-in-out;
+}
+
+.back{
+  background-image: url(meeting.gif);
+  color: black;
+  height:400px;
+  width : 100%;
+  padding : 2px;
+  font-family: italic;
+  background-position: center;
+  background-repeat : no-repeat;
+  border-radius:10px;
+  box-shadow: 0 3px 20px 0 #ff6600;
+}
+@media all and (max-width: 576px) {
+  footer.p {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 0px){
+back {
+   background:none;
+}
+}
+

@@ -1,0 +1,14 @@
+.head{
+    font-family : italic;
+    color:Blue;
+    font-size : 1.5rem;
+}
+
+.card {
+    margin-top: 6px;
+    background:#ccffcc ;
+    border-color: black;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+

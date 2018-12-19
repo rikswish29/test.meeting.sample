@@ -1,0 +1,22 @@
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid rgb(37, 65, 38); /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #181618; /* BLACK*/
+  }
+  
+  body {
+    background : white;
+  }
+  
+  .form-container {
+    padding: 20px;
+    background: #aab14e;
+    color:white;
+    
+  }
+  .form-group-prop{
+    width: 50%;
+    background: #42A948;
+   }

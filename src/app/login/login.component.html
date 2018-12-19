@@ -1,0 +1,45 @@
+<div class="container">
+
+
+  <div class="row">
+      <div class="col-sm-6 col-xs-0  col-lg-6 back text-center " >
+          
+ </div>
+
+      
+
+       <div class="col-sm-6 col-xs-12 col-lg-6">
+           <div class="wrapper">
+             <div class="form-container">
+                
+               <h1 class="text-center"> LOGIN DETAILS </h1>
+
+                <br>
+                <form (ngSubmit)="loginUser()" #loginForm="ngForm">
+       
+                  <div class="form-group" style="padding:2px">
+                    <label style="padding:2px" >Email ID</label>
+                     <input  style="padding:2px" name="emailid" type="text" [(ngModel)]="emailId" #email="ngModel" class="form-control" placeholder="Enter Email" required>
+                  </div>
+                  <br>
+                  <div class="form-group" style="padding:2px" >
+                    <label>Password</label>
+                    <input style="padding:2px" type="password" name="Password"  placeholder="********" [(ngModel)] = "password" #pass="ngModel" class="form-control" required>
+                    <div style="padding:2px">
+                       <a (click)="forgotPassword()" class="forgot-password-link">Forgot your password?</a>
+                    </div>
+                  </div>
+
+                  <div style="padding:2px" class="alert alert-warning" *ngIf="checkErrorFromBackend">
+                    <strong>Warning!</strong> Invalid Username and/or Password.
+                  </div>
+                  
+                  <br><br>
+                  <button type="submit" style="padding:2px; margin-left:2%;" class="btn btn-success">SignIn</button>
+                  <button type="submit" style="padding:2px" (click)="signUp()" class="btn btn-primary">SignUp</button>
+                 </form>
+            </div>
+        </div>
+      </div>
+   </div>
+</div>
